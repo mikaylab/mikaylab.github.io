@@ -1,20 +1,20 @@
 @charset "UTF-8";
 header {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Nova Square', cursive;
 }
 header h1 {
    font-weight: 900;
 }
 .header-text {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Nova Square', cursive;
     font-weight: 400;
 }
 p {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Nova Square', cursive;
     font-weight: 700;
 }
 .nav-item {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Nova Square', cursive;
 }
 .nav-link {
     color: black;
