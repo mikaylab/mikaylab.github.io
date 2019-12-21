@@ -1,39 +1,47 @@
 @charset "UTF-8";
 header {
-    font-family: 'Nova Square', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 header h1 {
    font-weight: 900;
 }
 .header-text {
-    font-family: 'Nova Square', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
 }
 p {
-    font-family: 'Nova Square', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
 }
 .nav-item {
-    font-family: 'Nova Square', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .nav-link {
     color: black;
 }
 ul.nav.nav-pills li.nav-item a.nav-link.active {
     background: black /**rgb(255, 216, 118)*/;
-    color:goldenrod;
+    color:#5f3f6e;
 }
 ul.nav li.nav-item a.nav-link:hover {
-    color: gold;
+    color: white;
 }
 ul.nav.flex-column {
     text-align: center;
+}
+img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 #major-mono {
     font-family: 'Major Mono Display', monospace;
 }
 #nova-square {
-    font-family: 'Nova Square', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 #space-mono {
     font-family: 'Space Mono', monospace;

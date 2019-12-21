@@ -21,22 +21,33 @@ p {
 }
 ul.nav.nav-pills li.nav-item a.nav-link.active {
     background: black /**rgb(255, 216, 118)*/;
-    color:goldenrod;
+    color:white;
 }
 ul.nav li.nav-item a.nav-link:hover {
-    color: gold;
+    color: #5f3f6e;
 }
 ul.nav.flex-column {
     text-align: center;
+}
+.card {
+    border-radius: 0px 0px;
+}
+img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 #major-mono {
     font-family: 'Major Mono Display', monospace;
 }
 #nova-square {
-    font-family: 'Nova Square', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 #space-mono {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 footer {
     display: flex;

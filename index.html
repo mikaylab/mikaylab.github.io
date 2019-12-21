@@ -2,9 +2,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
-    <!-- <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Nova+Square|Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Source+Sans+Pro|Space+Mono|&display=swap" rel="stylesheet">
     <link id="style-sheet" rel="stylesheet" href="./css/styles.css" type="text/css">
     <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
     <link rel="icon" type="image/png" href="./favicon_package_v0.16/apple-touch-icon.png" />
@@ -35,7 +33,7 @@
         </ul>
     </div>
 </header>
-<body>
+<body style="background-color: #decce6;">
     <div class="container">
         <!-- Nav tabs -->
         <ul class="nav nav-pills nav-justified justify-content-center" id="myTab" role="tablist">
@@ -63,7 +61,7 @@
                         <p>I BLNG/I BELONG Earrings</p>
                     </div>
                     <div class="card border-light" style="width: 20rem">
-                        <img src="./images/Zara_head.jpg" class="card-img-top" alt="Zara's Head"  onclick="window.open(`https://www.media.mit.edu/projects/don-t-touch-my-hair-exploring-consent-education-through-interactive-art/overview/`)"/>
+                        <img src="./images/Zara_head.jpg" id="MIT-PROJECT" class="card-img-top" alt="Zara's Head" onmouseover="" onclick="window.open(`https://www.media.mit.edu/projects/don-t-touch-my-hair-exploring-consent-education-through-interactive-art/overview/`)"/>
                         <p>(Don't) Touch My Hair: 2019 MIT Summer Research Project</p>
                     </div>
                     <div class="card border-light" style="width: 20rem">
@@ -71,11 +69,11 @@
                         <p>8-bit Rotary Telephone</p>
                     </div>
                     <div class="card border-light" style="width: 20rem">
-                        <img src="./images/Photos (1)/Pink Tax App.png" class="card-img-top" alt="Pink Tax App graphic">
+                        <img src="./images/Photos (1)/Pink Tax App.png"  onclick="window.open(`https://github.com/mikaylab/Pink-Tax`)" class="card-img-top" alt="Pink Tax App graphic">
                         <p>Pink Tax App</p>
                     </div>
                     <div class="card border-light" style="width: 20rem">
-                        <img src="./images/Photos (1)/Thought Jar.png" class="card-img-top" alt="Thought Jar Graphic">
+                        <img src="./images/Photos (1)/Thought Jar.png" onclick="window.open(`https://github.com/mikaylab/ThoughtJar`)"class="card-img-top" alt="Thought Jar Graphic">
                         <p>Thought Jar App: BuildHER Hackathon</p>
                     </div>
                     <div class="card border-light" style="width: 20rem">
@@ -113,11 +111,11 @@
                         <p>Fruit Salad: Fitness Tracking App</p>
                     </div>
                     <div class="card border-light" style="width: 20rem">
-                        <img src="./images/Photos (1)/Pink Tax App.png" class="card-img-top" alt="Pink Tax App graphic">
+                        <img src="./images/Photos (1)/Pink Tax App.png" onclick="window.open(`https://github.com/mikaylab/Pink-Tax`)" class="card-img-top" alt="Pink Tax App graphic">
                         <p>Pink Tax App</p>
                     </div>
                     <div class="card border-light" style="width: 20rem">
-                        <img src="./images/Photos (1)/Thought Jar.png" class="card-img-top" alt="Thought Jar Graphic">
+                        <img src="./images/Photos (1)/Thought Jar.png"  onclick="window.open(`https://github.com/mikaylab/ThoughtJar`)" class="card-img-top" alt="Thought Jar Graphic">
                         <p>Thought Jar App: BuildHER Hackathon</p>
                     </div>
                 </div>
@@ -170,5 +168,9 @@
             styleSheet.setAttribute("href", "./css/styles-space.css");
         }    
     }
+    // function changeMonochrome(id) {
+    //     let object = document.getElementById(id);
+    //     object.style.filter = grayscale(100%);
+    // }
 </script>
 </html>
