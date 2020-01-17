@@ -1,20 +1,23 @@
 @charset "UTF-8";
 header {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Space Mono', monospace;
 }
 header h1 {
    font-weight: 900;
 }
 .header-text {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Space Mono', sans-serif;
+
     font-weight: 400;
 }
 p {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Space Mono', sans-serif;
+
     font-weight: 700;
 }
 .nav-item {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Space Mono', sans-serif;
+
 }
 .nav-link {
     color: black;
@@ -41,13 +44,14 @@ img:hover {
     filter: grayscale(0%);
 }
 #major-mono {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Space Mono', sans-serif;
+
 }
 #nova-square {
     font-family: 'Source Sans Pro', sans-serif;
 }
 #space-mono {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Space Mono', sans-serif;
 }
 footer {
     display: flex;
