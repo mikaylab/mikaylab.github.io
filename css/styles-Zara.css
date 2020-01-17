@@ -1,0 +1,40 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    
+}
+p {
+    font-size: 10pt;
+}
+#color-imgs {
+    align-self: center;
+    width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.color-img {
+    width: 500px;
+}
+img {
+    align-self: center;
+    margin: auto;
+    width: 500px;
+}
+figcaption {
+    width: 500px;
+    text-align: left;
+    margin: auto;
+}
