@@ -7,7 +7,7 @@ header h1 {
 }
 .header-text {
     font-family: 'Space Mono', sans-serif;
-
+    padding: 0px 5px 0px 0px;
     font-weight: 400;
 }
 p {
@@ -32,8 +32,10 @@ ul.nav li.nav-item a.nav-link:hover {
 ul.nav.flex-column {
     text-align: center;
 }
-.card {
-    border-radius: 0px 0px;
+.card.border-light {
+    background-color: #decce6;
+    /* border: 10px 10px #decce6; */
+    width: 20rem;
 }
 img {
     -webkit-filter: grayscale(100%);
