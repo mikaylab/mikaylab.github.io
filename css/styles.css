@@ -1,23 +1,16 @@
 @charset "UTF-8";
-header {
+* {
     font-family: 'Space Mono', monospace;
 }
 header h1 {
    font-weight: 900;
 }
 .header-text {
-    font-family: 'Space Mono', sans-serif;
-    padding: 0px 5px 0px 0px;
+    padding-top: 15px;
     font-weight: 400;
 }
 p {
-    font-family: 'Space Mono', sans-serif;
-
     font-weight: 700;
-}
-.nav-item {
-    font-family: 'Space Mono', sans-serif;
-
 }
 .nav-link {
     color: black;
@@ -32,7 +25,7 @@ ul.nav li.nav-item a.nav-link:hover {
 ul.nav.flex-column {
     text-align: center;
 }
-.card.border-light {
+.card.border-0 {
     background-color: #decce6;
     /* border: 10px 10px #decce6; */
     width: 20rem;
@@ -45,10 +38,7 @@ img:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
-#major-mono {
-    font-family: 'Space Mono', sans-serif;
 
-}
 #nova-square {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -57,6 +47,7 @@ img:hover {
 }
 footer {
     display: flex;
-    color: goldenrod;
+    color: #e4d3ec;
     text-align: center;
+    background-color: #5f3f6e;
 }

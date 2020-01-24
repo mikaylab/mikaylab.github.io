@@ -48,6 +48,7 @@ img:hover {
 }
 footer {
     display: flex;
-    color: goldenrod;
+    color: #e4d3ec;
     text-align: center;
+    background-color: #5f3f6e;
 }

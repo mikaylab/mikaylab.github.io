@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
 }
 .container {
     display: -webkit-box;
@@ -12,12 +12,57 @@
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    
+    background-color: #decce6;
+}
+ul {
+    padding-inline-start: 0px;
+}
+.breadcrumbs {
+    text-align: left;
+    background-color: #decce6;
+    list-style: none;
+    align-self: flex-start;
+}
+.breadcrumbs li {
+    display: inline;
+    font-size: 12px;
+    font-weight: 600;
+}
+ul.breadcrumbs li a {
+    color: black;
+    text-decoration: none;
+}
+ul.breadcrumbs li a:hover {
+    color: rgb(142, 109, 180);
+    text-decoration: underline;
+}  
+.title {
+    text-align: center;
+}
+.title h3 {
+    font-weight: 300;
+}
+.title h1 {
+    font-weight: 400;
+}
+hr.line {
+    border-top: 3px dotted white;
 }
 p {
-    font-size: 10pt;
+    margin: auto;
+    padding-top: 15px;
+    font-size: 12pt;
+}
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding-top: 15px;
+}
+#name-img {
+    align-self: flex-end;
+    height: 90px;
 }
 #color-imgs {
     align-self: center;
@@ -28,10 +73,11 @@ p {
 .color-img {
     width: 500px;
 }
-img {
+.figure-img {
     align-self: center;
-    margin: auto;
+    display: flex;
     width: 500px;
+    flex-flow: column wrap;
 }
 figure {
     padding: 15px;
@@ -41,4 +87,10 @@ figcaption {
     padding: 5px;
     text-align: left;
     margin: auto;
+}
+footer {
+    display: flex;
+    color: #e4d3ec;
+    text-align: center;
+    background-color: #5f3f6e;
 }
