@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.figure {
+    padding: 0px;
+}
+.diagram-img {
+    align-self: center;
+    display: flex;
+    width: 800px;
+    flex-flow: column wrap;
+}
+.bARaids-img {
+    align-self: center;
+    display: flex;
+    width: 500px;
+    flex-flow: column wrap;
+}
+#final-product-img {
+    align-self: center;
+    display: flex;
+    width: 800px;
+    flex-flow: column wrap;
+}
+#bARaids-imgs {
+    align-self: center;
+    display: flex;
+    flex-flow: column wrap;
+}
