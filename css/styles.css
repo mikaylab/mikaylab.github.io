@@ -22,8 +22,24 @@ ul.nav.nav-pills li.nav-item a.nav-link.active {
 ul.nav li.nav-item a.nav-link:hover {
     color: #5f3f6e;
 }
-ul.nav.flex-column {
-    text-align: center;
+ul.nav {
+    margin-left: 15%;
+    margin-top: 12px;
+}
+#logo-box {
+    /* left: calc((100% - 900px) / 4); */
+    height: 135px;
+    max-width: 1200px; 
+    min-width: 400px;
+    margin-bottom: 10px;
+}
+img#logo {
+    width: calc((100%));
+}
+li.nav-item {
+    margin-left: 10%;
+    margin-right: 10%;
+    align-self: center; 
 }
 .card.border-0 {
     background-color: #decce6;

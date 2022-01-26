@@ -10,13 +10,23 @@
     <title>Mikayla Buford</title>
 </head>
 <header id="header">
-    <div style="margin-left: 1%; margin-right: 1%" class="d-flex">
+    <div id="logo-box" position="relative">
+        <img id="logo" src="images/Mikayla Buford Logo/FullName-White.png" alt="Mikayla Buford">
+    </div>
+    <ul class="nav nav-pills nav-justified justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item">
+            <h3>resume</h3>
+        </li>
+        <li class="nav-item">
+            <h3>contact</h3>
+        </li>
+    </ul>
+    <div style="margin-left: 10%; margin-right: 10%" class="d-flex">
         <div class="d-flex p-3 flex-row align-content-center">
-            <div class="p-3">
+            <!-- <div class="p-3">
                 <img src="./images/index.png" width="200" height="200" alt="Picture of Mikayla Buford">
-            </div>
+            </div> -->
             <div class="p-3">
-                <img src="images/Mikayla Buford Logo/FullName-White.png" width="800" alt="Mikayla Buford">
                 <p class="header-text">Hi, I'm Mikayla Buford. I'm a graduate student in the Masters of Design program at the University of Michigan - Ann Arbor. I attended the University of Wisconsin-Madison for my Bachelors in Computer Science. I'm interested in the marriage of technology, art, and social justice through the lens of Afrofuturism.</p>
                 <p class="header-text">Aside from being a programmer I enjoy exploring how creative technology can be applied to humanities and creating social awareness.
                 <p class="header-text">
@@ -25,7 +35,7 @@
                 </p>
             </div>
            
-            <ul class="nav flex-column">
+            <!-- <ul class="nav flex-column">
                 <li class="nav-item">
                     <a href="https://www.linkedin.com/in/mikayla-buford-9471221"><div class="icons8 linkedin"></div></a>
                 </li>
@@ -38,19 +48,8 @@
                 <li class="nav-item">
                     <a href="mailto:mibuford@umich.edu"><div class="icons8 email"></div></a>
                 </li>
-            </div>
+            </ul> -->
         </div>
-        <!-- <ul class="nav flex-column">
-            <li class="nav-item">
-                <a id='major-mono' onclick="changeFont('major-mono')" class="nav-link active">M</a>
-            </li>
-             <li class="nav-item">
-                <a class="nav-link" id="nova-square" onclick="changeFont(this.id)">M</a>
-            </li> -->
-            <!-- <li class="nav-item">
-                <a class="nav-link" id="space-mono" onclick="changeFont(this.id)">M</a>
-            </li> 
-        </ul>-->
     </div>
 </header>
 <body style="background-color: #decce6;">
@@ -203,24 +202,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 <footer>
-    <p class="footer">Mikayla Buford 2021. Website by Mikayla Buford</p>
+    <p class="footer">Mikayla Buford 2022. Website by Mikayla Buford</p>
 </footer>
 <script type="text/javascript">
-    function changeFont(id) {
-        let styleSheet = document.getElementById("style-sheet");
-        if (id === 'major-mono') {
-            styleSheet.setAttribute("href", "./css/styles.css");
-        }
-        else if (id === 'nova-square') {
-            styleSheet.setAttribute("href", "./css/styles-nova.css");
-        }    
-        else {
-            styleSheet.setAttribute("href", "./css/styles-space.css");
-        }    
-    }
-    // function changeMonochrome(id) {
-    //     let object = document.getElementById(id);
-    //     object.style.filter = grayscale(100%);
-    // }
 </script>
 </html>
