@@ -1,4 +1,7 @@
 @charset "UTF-8";
+h5 u {
+    font-family: 'MuseoModerno', cursive;
+}
 .figure {
     padding: 0px;
 }

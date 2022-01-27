@@ -1,10 +1,13 @@
 @charset "UTF-8";
 * {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Chivo', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 h1 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'MuseoModerno', cursive;
 }
+
 .container {
     display: -webkit-box;
     display: -moz-box;
@@ -15,41 +18,44 @@ h1 {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     justify-content: space-around;
-    background-color: #decce6;
+    background: rgb(255,226,253);
+    background: linear-gradient(to bottom, rgba(255,226,253,1) 0%, rgba(232,204,245,1) 10%, rgb(201, 177, 231) 30%);
 }
 ul {
     padding-inline-start: 0px;
 }
 .breadcrumbs {
     text-align: left;
-    background-color: #decce6;
+    background-color: rgba(255,226,253,1);
     list-style: none;
     align-self: flex-start;
 }
 .breadcrumbs li {
     display: inline;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
 }
 ul.breadcrumbs li a {
     color: black;
-    text-decoration: none;
+    font-family: 'MuseoModerno', cursive;
 }
 ul.breadcrumbs li a:hover {
     color: rgb(142, 109, 180);
     text-decoration: underline;
 }  
 .title {
+    font-family: 'MuseoModerno', cursive;
     text-align: center;
 }
 .title h3 {
+    font-family: 'MuseoModerno', cursive;
     font-weight: 300;
 }
 .title h1 {
     font-weight: 400;
 }
 hr.line {
-    border-top: 30px dotted white;
+    border-top: 2px solid black;
 }
 p {
     margin: auto;
