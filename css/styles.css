@@ -1,23 +1,38 @@
 @charset "UTF-8";
 * {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'MuseoModerno', cursive;
 }
-header h1 {
-   font-weight: 900;
+header h2 {
+   font-weight: 600;
+   font-size: 50px;
+   letter-spacing: 5px;
 }
 .header-text {
+    font-family: 'Chivo', sans-serif;
     padding-top: 15px;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.link-text {
+    font-family: 'MuseoModerno', cursive;
     font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 5px;
+    /* padding: 10px; */
 }
-p {
-    font-weight: 700;
+body {
+    background: rgb(255,226,253);
+    background: linear-gradient(to bottom, rgba(255,226,253,1) 0%, rgba(232,204,245,1) 10%, rgb(201, 177, 231) 30%);
 }
+
 .nav-link {
     color: black;
 }
 ul.nav.nav-pills li.nav-item a.nav-link.active {
     background: black /**rgb(255, 216, 118)*/;
     color:white;
+
 }
 ul.nav li.nav-item a.nav-link:hover {
     color: #5f3f6e;
@@ -27,24 +42,44 @@ ul.nav {
     margin-top: 12px;
 }
 #logo-box {
-    /* left: calc((100% - 900px) / 4); */
-    height: 135px;
-    max-width: 1200px; 
-    min-width: 400px;
+    /* margin-left: calc((100% - 150px) / 2); middle  */
+    margin-top: 10px;
+    min-height: 60px;
+    max-height: 100px; /* make this change when the screen is small*/
     margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    position: relative;
+
 }
 img#logo {
-    width: calc((100%));
+    float: left;
+    margin-left: calc((0% + 50px));
+    width: 100px;
+    /* margin-top: 5px; */
 }
-li.nav-item {
+#current {
     margin-left: 10%;
     margin-right: 10%;
-    align-self: center; 
 }
+#resume_cv {
+    float: right;
+    margin-right: calc((0% + 50px) / 2);
+}
+
+/* button {
+    float: left;
+    background-color: rgba(255,226,253,1);
+    opacity: 0.5;
+    border: 1px solid #000;
+    border-top: 0px;
+    height: 60px;
+} */
+
 .card.border-0 {
-    background-color: #decce6;
-    /* border: 10px 10px #decce6; */
+    background-color: rgb(201, 177, 231);
+    border: 10px 10px #decce6;
     width: 20rem;
+    text-align: center;
 }
 img {
     -webkit-filter: grayscale(100%);
