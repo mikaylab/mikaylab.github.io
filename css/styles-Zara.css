@@ -7,7 +7,9 @@
 h1 {
     font-family: 'MuseoModerno', cursive;
 }
-
+h4 {
+    font-family: 'MuseoModerno', cursive;
+}
 .container {
     display: -webkit-box;
     display: -moz-box;
@@ -26,7 +28,7 @@ ul {
 }
 .breadcrumbs {
     text-align: left;
-    background-color: rgba(255,226,253,1);
+
     list-style: none;
     align-self: flex-start;
 }
@@ -50,12 +52,29 @@ ul.breadcrumbs li a:hover {
 .title h3 {
     font-family: 'MuseoModerno', cursive;
     font-weight: 300;
+    font-size: x-large;
+}
+.title h4 {
+    font-family: 'Chivo', sans-serif;
+    font-size: large;
+    font-weight: 200;
 }
 .title h1 {
     font-weight: 400;
 }
 hr.line {
     border-top: 2px solid black;
+}
+.rel-box {
+    position: relative;
+}
+.left-pane {
+   float: left;
+   width: 700px;
+}
+.right-pane {
+    float: right;
+    width: 400px;
 }
 p {
     margin: auto;
@@ -75,27 +94,28 @@ p {
 }
 #color-imgs {
     align-self: center;
-    width: 500px;
+    width: 300px;
     display: flex;
     flex-flow: column wrap;
 }
 .color-img {
-    width: 500px;
+    width: 300px;
 }
 .figure-img {
     align-self: center;
     display: flex;
-    width: 500px;
+    width: 300px;
     flex-flow: column wrap;
 }
 figure {
-    padding: 15px;
+    padding-top: 30px;
 }
 figcaption {
-    width: 500px;
+    width: 300px;
     padding: 5px;
     text-align: left;
     margin: auto;
+    font-size: small;
 }
 footer {
     display: flex;
