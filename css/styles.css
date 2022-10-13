@@ -4,6 +4,12 @@
     --secondary-color: #a3bcff;  /* periwinkle */
     --accent-color: #afe656;  /* lime green */
     --light-color: #f9f5fa;  /* almost white */
+
+    --xlarge: 120px;
+    --large: 44px;
+    --medium: 33px;
+    --small: 22px;
+    --xsmall: 12px;
 }
 
 * {
@@ -14,15 +20,15 @@
 h1 {
     font-family: 'MuseoModerno', cursive;
     font-weight: 200px; /* ExtraLight */
-    font-size: 120px;
+    font-size: var(--xlarge);
     line-height: 120px;
     color: var(--secondary-color);
- }
+}
 
 h2 {
     font-family: 'MuseoModerno', cursive;
     font-weight: 500px; /* Medium */
-    font-size: 44px;
+    font-size: var(--large);
     line-height: 46px;
     color: var(--secondary-color);
 }
@@ -30,14 +36,14 @@ h2 {
 h3 {
     font-family: 'MuseoModerno', cursive;
     font-weight: 500px; /* Medium */
-    font-size: 33px;
+    font-size: var(--medium);
     line-height: 36px;
     color: var(--secondary-color);
 }
 
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 22px;
+    font-size: var(--small);
     line-height: 30px;
     color: var(--secondary-color);
 }
@@ -45,7 +51,7 @@ p {
 .button {
     font-family: 'MuseoModerno', cursive;
     font-weight: 500px; /* Medium */
-    font-size: 22px;
+    font-size: var(--small);
     line-height: 30px;
 
     padding: 10px;
@@ -63,7 +69,7 @@ p {
 
 .label {
     font-family: 'Lato', sans-serif;
-    font-size: 22px;
+    font-size: var(--small);
     line-height: 30px;
     letter-spacing: 100px;
 }
@@ -77,40 +83,33 @@ p {
     font-family: 'MuseoModerno', cursive;
     font-weight: 400;
     font-size: 15px;
-    letter-spacing: 5px;
-    /* padding: 10px; */
 }
 
-/* body {
-    background: var(--primary-color);
-    padding-left: 300px;
-    padding-right: 300px;
-} */
+body {
+    overflow-x: hidden;
+}
 
-nav .nav-link {
+nav.navbar-dark .navbar-brand {
     font-family: 'MuseoModerno', cursive;
     font-weight: 500px; /* Medium */
-    font-size: 23px;
-    line-height: 36px;
+    font-size: var(--medium); 
+    color: var(--accent-color);
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 500px; /* Medium */
+    font-size: var(--small);
     color: var(--secondary-color);
-
 }
 
-.navbar-nav .nav-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-nav .navbar-brand {
-    font-family: 'MuseoModerno', cursive;
-    font-weight: 500px; /* Medium */
-    font-size: 33px; 
+.navbar-nav .nav-item .nav-link:hover {
     color: var(--accent-color);
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
     .navbar-nav {
-        padding-left: 300px;
+        padding-left: calc((100% - 150px) / 2);
     }
 
     header {
@@ -121,28 +120,33 @@ nav .navbar-brand {
     }
 }
 
-@media (max-width: 798px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* .navbar-nav {
+        padding-left: calc((100% - 150px) / 2);
+    } */
+    
+}
+
+@media (max-width: 767px) {
     .navbar-nav {
-        padding-left: 0px;
+        padding-left: 0 auto !important;
     }
 
     header {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding: 0 auto !important;
+    }
+
+    nav.navbar-dark .navbar-brand {
+        font-size: var(--small);
+    }
+
+    nav .nav-link {
+        font-size: var(--xsmall);
     }
 }
-a.nav-link:hover {
-    color: var(--accent-color);
-    font-weight: 200px;
-}
 
 
-ul.nav {
-    margin-left: 15%;
-    margin-top: 12px;
-}
+
  #logo-box {
     margin-left: calc((100% - 150px) / 2);
     margin-top: 10px;
@@ -169,14 +173,14 @@ img#logo {
     margin-right: calc((0% + 50px) / 2);
 }
 
-button {
+/* button {
     float: left;
     background-color: rgba(255,226,253,1);
     opacity: 0.5;
     border: 1px solid #000;
     border-top: 0px;
     height: 60px;
-}
+} */
 
 .card.border-0 {
     background-color: rgb(201, 177, 231);
@@ -197,6 +201,7 @@ footer {
     display: flex;
     color: var(--light-color);
     text-align: center;
-    
+    padding-left: 300px;
+    padding-right: 300px;
     background-color: var(--primary-color);
 }
