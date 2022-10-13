@@ -107,6 +107,17 @@ nav.navbar-dark .navbar-brand {
     color: var(--accent-color);
 }
 
+button.my-toggler.navbar-toggler {
+    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+}
+
+button.my-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(24, 11, 61)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 @media (min-width: 1024px) {
     .navbar-nav {
         padding-left: calc((100% - 150px) / 2);
