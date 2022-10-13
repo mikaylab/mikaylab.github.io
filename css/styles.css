@@ -5,7 +5,7 @@
     --accent-color: #afe656;  /* lime green */
     --light-color: #f9f5fa;  /* almost white */
 
-    --xlarge: 120px;
+    --xlarge: 90px;
     --large: 44px;
     --medium: 33px;
     --small: 22px;
@@ -19,15 +19,15 @@
 
 h1 {
     font-family: 'MuseoModerno', cursive;
-    font-weight: 200px; /* ExtraLight */
+    font-weight: 200; /* ExtraLight */
     font-size: var(--xlarge);
-    line-height: 120px;
+    line-height: 80px;
     color: var(--secondary-color);
 }
 
 h2 {
     font-family: 'MuseoModerno', cursive;
-    font-weight: 500px; /* Medium */
+    font-weight: 400; /* Medium */
     font-size: var(--large);
     line-height: 46px;
     color: var(--secondary-color);
@@ -35,7 +35,7 @@ h2 {
 
 h3 {
     font-family: 'MuseoModerno', cursive;
-    font-weight: 500px; /* Medium */
+    font-weight: 400; /* Medium */
     font-size: var(--medium);
     line-height: 36px;
     color: var(--secondary-color);
@@ -43,6 +43,7 @@ h3 {
 
 p {
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: var(--small);
     line-height: 30px;
     color: var(--secondary-color);
