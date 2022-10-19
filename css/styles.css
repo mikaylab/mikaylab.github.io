@@ -21,7 +21,7 @@ h1 {
     font-family: 'MuseoModerno', cursive;
     font-weight: 200; /* ExtraLight */
     font-size: var(--xlarge);
-    line-height: 80px;
+    line-height: 85px;
     color: var(--secondary-color);
 }
 
@@ -75,11 +75,6 @@ p {
     letter-spacing: 100px;
 }
 
-/* .section {
-    padding-top: 175px;
-    padding-bottom: 175px;
-} */
-
 .link-text {
     font-family: 'MuseoModerno', cursive;
     font-weight: 400;
@@ -102,6 +97,7 @@ nav.navbar-dark .navbar-brand {
     font-weight: 500px; /* Medium */
     font-size: var(--small);
     color: var(--secondary-color);
+    padding-right: 20px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -111,7 +107,6 @@ nav.navbar-dark .navbar-brand {
 button.my-toggler.navbar-toggler {
     border-color: var(--primary-color);
     background-color: var(--secondary-color);
-
 }
 
 button.my-toggler .navbar-toggler-icon {
@@ -133,9 +128,19 @@ button.my-toggler .navbar-toggler-icon {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* .navbar-nav {
-        padding-left: calc((100% - 150px) / 2);
-    } */
+    nav.navbar-dark .navbar-brand {
+        font-size: var(--small);
+    }
+
+    h1 {
+        font-size: var(--large);
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: var(--small);
+        line-height: 22px;
+    }
     
 }
 
@@ -155,9 +160,22 @@ button.my-toggler .navbar-toggler-icon {
     nav .nav-link {
         font-size: var(--xsmall);
     }
+
+    h1 {
+        font-size: var(--large);
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: var(--small);
+        line-height: 22px;
+    }
+
+    p {
+        font-size: var(--xsmall);
+        line-height: normal;
+    }
 }
-
-
 
  #logo-box {
     margin-left: calc((100% - 150px) / 2);
@@ -176,10 +194,12 @@ img#logo {
     width: 100px;
     /* margin-top: 5px; */
 }
+
 #current {
     margin-left: 10%;
     margin-right: 10%;
 }
+
 #resume_cv {
     float: right;
     margin-right: calc((0% + 50px) / 2);
@@ -213,7 +233,7 @@ footer {
     display: flex;
     color: var(--light-color);
     text-align: center;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
     background-color: var(--primary-color);
 }
