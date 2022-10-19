@@ -127,7 +127,7 @@ button.my-toggler .navbar-toggler-icon {
     header {
         padding-top: 50px;
         padding-bottom: 50px;
-        padding-left: 200px;
+        padding-left: calc((100% - 800px) / 4);
         padding-right: 200px;
     }
 }
