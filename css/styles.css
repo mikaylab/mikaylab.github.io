@@ -259,11 +259,8 @@ img#logo {
     background-image: url(/images/Overlays/pattern2-bubble-jewels-slate_10.png);
 }
 
-.card.border-0 {
-    background-color: rgb(201, 177, 231);
-    border: 10px 10px #decce6;
-    width: 20rem;
-    text-align: center;
+.box-img {
+    width: 12rem;
 }
 
 footer {
