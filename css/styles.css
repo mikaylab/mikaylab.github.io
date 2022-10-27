@@ -97,7 +97,6 @@ nav.navbar-dark .navbar-brand {
     font-weight: 500px; /* Medium */
     font-size: var(--small);
     color: var(--secondary-color);
-    padding-right: 20px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -120,16 +119,10 @@ button.my-toggler .navbar-toggler-icon {
 }
 
 @media (min-width: 1024px) {
-    .navbar-nav {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
 
     header {
         padding-top: 50px;
         padding-bottom: 50px;
-        padding-left: calc((100% - 800px) / 4);
-        padding-right: 200px;
     }
 }
 
