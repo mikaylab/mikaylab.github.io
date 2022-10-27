@@ -259,10 +259,15 @@ img#logo {
     background-image: url(/images/Overlays/pattern2-bubble-jewels-slate_10.png);
 }
 
+
 .box-img {
-    width: 12rem;
+    max-width: 100%;
 }
 
+.box-body {
+    text-align: center;
+    background-color: var(--primary-color);
+}
 footer {
     display: flex;
     color: var(--light-color);
