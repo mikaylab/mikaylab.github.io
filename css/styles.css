@@ -12,7 +12,6 @@
     --xsmall: 12px;
 }
 
-
 h1 {
     font-family: 'MuseoModerno', cursive;
     font-weight: 200; /* ExtraLight */
@@ -122,7 +121,8 @@ button.my-toggler .navbar-toggler-icon {
 
 @media (min-width: 1024px) {
     .navbar-nav {
-        padding-left: calc((100% - 150px) / 2);
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     header {
