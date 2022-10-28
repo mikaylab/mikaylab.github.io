@@ -230,8 +230,8 @@ img#logo {
 #featured-work {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    position: relative;
 
+    position: relative;
     background-image: url(/images/Overlays/pattern1-tight-curves-slate_10.png);
 }
 
@@ -261,6 +261,7 @@ img#logo {
     text-align: center;
     background-color: var(--primary-color);
 }
+
 footer {
     display: flex;
     color: var(--light-color);
