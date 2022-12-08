@@ -75,6 +75,8 @@ button.b2 {
     font-family: 'MuseoModerno', cursive;
     font-weight: 400;
     font-size: 15px;
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
 header {
@@ -83,6 +85,7 @@ header {
 
 body {
     overflow-x: hidden;
+    background-color: #180b3d;
 }
 
 nav.navbar-dark .navbar-brand {
