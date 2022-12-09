@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
-    <link id="style-sheet" rel="stylesheet" href="./css/styles.css" type="text/css">
     <link id="style-sheet" rel="stylesheet" href="./css/styles-about.css" type="text/css">
     <link rel="icon" type="image/png" href="./favicon_package_v0.16/apple-touch-icon.png" />
     <title>Mikayla Buford</title>
@@ -36,21 +35,37 @@
     </nav>
 </header>
 <body>
-    <section id="about-desc">
-        <h1>About</h1>
-        <p>Description</p>
-        <p>Email me at <a class="link-text" href="mailto:mikaylabuford17@gmail.com?subject = Hello Mikayla!">mikaylabuford17@gmail.com</a></p>
-
-        <h2>Ask Me About</h2>
-        <ul>
-            <li>Golden Girls</li>
-            <li>Thrift Shopping</li>
-            <li>The beauty of cooking a whole chicken</li>
-        </ul>
-        <button>Download Resume</button>
-        <button>Download CV</button>
+    <section id="about-desc" class="d-flex justify-content-around">
+        <div class="d-flex section align-items-center">
+            <div class="p-5">
+                <h1>About</h1>
+                <p>Description</p>
+                <p>Email me at <a class="link-text" href="mailto:mikaylabuford17@gmail.com">mikaylabuford17@gmail.com</a>, or connect with me on <a class="link-text" href="https://www.linkedin.com/in/mikayla-buford-947122163/">LinkedIn.</a></p>
+        
+                <div class="py-4">
+                    <h2 style="color: #afe656">Ask Me About</h2>
+                    <ul>
+                        <li>The Golden Girls</li>
+                        <li>Thrift shopping</li>
+                        <li>The beauty of cooking a whole chicken</li>
+                    </ul>
+                </div>
+                <a id="resume_cv" href="/files/Buford, Mikayla Resume - Jan 2022 .pdf" rel="noopener" target="_blank">
+                    <button class="b1"> <img src="images/Gems/blue-plus-200x200.png" width="15px" height="15px"> Download Resume</button>
+                </a>
+                <a id="resume_cv" href="/files/Mikayla Buford CV 2021.pdf" rel="noopener" target="_blank">
+                    <button class="b1"><img src="images/Gems/blue-plus-200x200.png" width="15px" height="15px"> Download CV</button>
+                </a>
+            </div>
+            <div class="p-2" style="max-width: 525px; min-width: 300px;">
+                <img src="/images/Overlays/mikayla-purple-green.png" id="cover-photo" alt="Image of Mikayla Buford">
+            </div>
+        </div>
+        
     </section>
-    <section id="timeline"></section>
+    <section id="timeline" style="height: 40rem">
+
+    </section>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

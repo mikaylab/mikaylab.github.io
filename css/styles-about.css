@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(/css/styles.css);
 :root {
     --primary-color: #180b3d; /* navy blue */
     --secondary-color: #a3bcff;  /* periwinkle */
@@ -11,11 +12,14 @@
     --small: 22px;
     --xsmall: 12px;
 }
+ul {
+    list-style: square url('/images/Gems/green-gem-1x1.png');
+}
 
-li {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: var(--small);
-    line-height: 30px;
+#timeline {
+    background-color: var(--primary-color);
     color: var(--secondary-color);
+
+    position: relative;
+    background-image: url(/images/Overlays/pattern3-open-curves-periwinkle.png);
 }

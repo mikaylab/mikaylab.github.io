@@ -47,10 +47,10 @@ p {
 button {
     font-family: 'MuseoModerno', cursive;
     font-weight: 500px; /* Medium */
-    font-size: var(--small);
+    font-size: var(--small) - 10px;
     line-height: 30px;
 
-    padding: 0.75rem;
+    padding: 0.5rem;
     border: 0px;
 }
 
@@ -71,10 +71,18 @@ button.b2 {
     letter-spacing: 100px;
 }
 
+li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: var(--small);
+    line-height: 30px;
+    color: var(--secondary-color);
+}
+
 .link-text {
     font-family: 'MuseoModerno', cursive;
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--small);
     color: var(--accent-color);
     text-decoration: underline;
 }
@@ -121,6 +129,11 @@ button.my-toggler .navbar-toggler-icon {
     padding-right: 10%;
 }
 
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 @media (min-width: 1024px) {
 
     header {
@@ -149,7 +162,7 @@ button.my-toggler .navbar-toggler-icon {
         line-height: 22px;
     }
     
-    p {
+    p, li, .link-text {
         font-size: var(--small);
         line-height: normal;
     }
@@ -158,6 +171,7 @@ button.my-toggler .navbar-toggler-icon {
         font-size: var(--xsmall);
         padding: 0.5rem;
     }
+    
 }
 
 @media (max-width: 767px) {
@@ -192,7 +206,7 @@ button.my-toggler .navbar-toggler-icon {
         line-height: 22px;
     }
 
-    p {
+    p, .link-text, li {
         font-size: var(--xsmall) + 10px;
         line-height: normal;
     }
@@ -201,6 +215,7 @@ button.my-toggler .navbar-toggler-icon {
         font-size: var(--xsmall);
         padding: 0.25rem;
     }
+
 }
 
 #current {
@@ -226,7 +241,6 @@ img#logo {
 }
 
 #resume_cv {
-    float: right;
     margin-right: calc((0% + 50px) / 2);
 }
 
