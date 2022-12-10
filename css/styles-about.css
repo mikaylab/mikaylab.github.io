@@ -1,25 +1,15 @@
 @charset "UTF-8";
 @import url(/css/styles.css);
-:root {
-    --primary-color: #180b3d; /* navy blue */
-    --secondary-color: #a3bcff;  /* periwinkle */
-    --accent-color: #afe656;  /* lime green */
-    --light-color: #f9f5fa;  /* almost white */
 
-    --xlarge: 90px;
-    --large: 44px;
-    --medium: 33px;
-    --small: 22px;
-    --xsmall: 12px;
-}
+
 ul {
     list-style: square url('/images/Gems/green-gem-1x1.png');
 }
 
 #timeline {
-    background-color: var(--primary-color);
+    background-color: var(--primary-collor);
     color: var(--secondary-color);
 
     position: relative;
-    background-image: url(/images/Overlays/pattern3-open-curves-periwinkle.png);
+    background-image: url('/images/Overlays/pattern3-open-curves-periwinkle_darkened_10.png');
 }
