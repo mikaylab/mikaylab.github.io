@@ -82,7 +82,7 @@ li {
 .link-text {
     font-family: 'MuseoModerno', cursive;
     font-weight: 400;
-    font-size: var(--small);
+    font-size: calc(var(--small) - 2px);
     color: var(--accent-color);
     text-decoration: underline;
 }
@@ -171,7 +171,6 @@ section {
         font-size: var(--xsmall);
         padding: 0.5rem;
     }
-    
 }
 
 @media (max-width: 767px) {
@@ -187,7 +186,7 @@ section {
         font-size: var(--small);
     }
 
-    nav .nav-link {
+    .navbar-nav .nav-item .nav-link {
         font-size: var(--xsmall);
     }
 
@@ -215,7 +214,6 @@ section {
         font-size: var(--xsmall);
         padding: 0.25rem;
     }
-
 }
 
 #current {
