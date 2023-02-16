@@ -11,11 +11,20 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1080, 860);
+  var canvas = createCanvas(windowWidth, windowHeight);
+  canvas.style('display', 'block');
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
   background("#180B3D");
+ 
+  var ctrX = windowWidth / 4;
+
+  translate(ctrX, 0);
 
   // GRAPE - Top Left
   push();
