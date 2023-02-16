@@ -267,6 +267,10 @@ img#logo {
     background-image: url(/images/Overlays/pattern2-bubble-jewels-slate_10.png);
 }
 
+#project-card {
+    background: radial-gradient(var(--primary-color), #373268 80%, #5D639E);
+}
+
 .box-img {
     max-width: 100%;
 }
