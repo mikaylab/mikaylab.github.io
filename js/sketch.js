@@ -1,24 +1,49 @@
-let limeImg;
-let periImg;
-let grapeImg;
+let limeImg, periImg, grapeImg, mx, my, link, par;
 
 function preload() {
   periImg = loadImage("/images/asset/Periwinkle.png");
-
   limeImg = loadImage("/images/asset/Lime Green.png");
-
   grapeImg = loadImage("/images/asset/GrapeTopRight.png");
+  // linkedInImg = loadImage("/images")
 }
 
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.style('display', 'block');
+
+  textSize(width / 40);
+  textAlign(CENTER,CENTER);
+  textWrap(WORD);
+  textFont('MuseoModerno')
+
+  mx = width / 4;
+  my = height / 4;
+
+  // link = createA('https://www.linkedin.com/in/mikayla-buford-947122163/', 'LinkedIn');
+  
+  link = createButton('LinkedIn');
+  link.position( windowWidth / 4 + width / 4 - 35, height / 1.95);
+  // link.style('font-family', 'MuseoModerno, cursive');
+
+  // par = createP('I\'m redesigning my website!');
+  // par.position = (200, 400);
 }
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+    textSize(width / 30);
+    link.position( windowWidth / 4 + width / 4 - 35, height / 1.95);
 }
 
+function mouseMoved() {
+  mx = mouseX - 200;
+  my = mouseY;
+}
+// function mouseClicked() {
+//   if (link.mouseClicked) {
+//     window.open('https://www.linkedin.com/in/mikayla-buford-947122163/');
+//   }
+// }
 function draw() {
   background("#180B3D");
  
@@ -138,4 +163,16 @@ function draw() {
   imageMode(CENTER);
   image(limeImg, 0, 0, 200, 200);
   pop();
+
+  fill('#180b3d');
+  text("Hello World!", mx , my); 
+
+  fill('#a3bcff'); 
+  text("Hello World!", mx + 1 , my - 1);
+
+  fill('#f9f5fa');
+  text("I'm redesigning my website", width / 4, height / 3.17);
+  text("You can still check out my work", width / 4, height / 2.45);
+
 }
+
