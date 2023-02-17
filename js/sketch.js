@@ -1,4 +1,4 @@
-let limeImg, periImg, grapeImg, mx, my, button, par;
+let limeImg, periImg, grapeImg, mx, my, button;
 
 function preload() {
   periImg = loadImage("/images/asset/Periwinkle.png");
@@ -7,8 +7,10 @@ function preload() {
 }
 
 function setup() {
+
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.style('display', 'block');
+  // canvas.position(0,80);
 
   textSize(width / 40);
   textAlign(CENTER,CENTER);
@@ -25,6 +27,7 @@ function setup() {
   button.style('color', '#a3bcff');
 
   button.mousePressed(buttonClicked);
+
 }
 
 function windowResized() {
