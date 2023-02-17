@@ -1,10 +1,9 @@
-let limeImg, periImg, grapeImg, mx, my, link, par;
+let limeImg, periImg, grapeImg, mx, my, button, par;
 
 function preload() {
   periImg = loadImage("/images/asset/Periwinkle.png");
   limeImg = loadImage("/images/asset/Lime Green.png");
   grapeImg = loadImage("/images/asset/GrapeTopRight.png");
-  // linkedInImg = loadImage("/images")
 }
 
 function setup() {
@@ -18,32 +17,31 @@ function setup() {
 
   mx = width / 4;
   my = height / 4;
-
-  // link = createA('https://www.linkedin.com/in/mikayla-buford-947122163/', 'LinkedIn');
   
-  link = createButton('LinkedIn');
-  link.position( windowWidth / 4 + width / 4 - 35, height / 1.95);
-  // link.style('font-family', 'MuseoModerno, cursive');
+  button = createButton('on LinkedIn');
+  button.position( windowWidth / 2.36 , height / 2.25);
+  button.style('font-size', '' + width / 40 + 'px');
+  button.style('background-color', '#180b3d');
+  button.style('color', '#a3bcff');
 
-  // par = createP('I\'m redesigning my website!');
-  // par.position = (200, 400);
+  button.mousePressed(buttonClicked);
 }
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     textSize(width / 30);
-    link.position( windowWidth / 4 + width / 4 - 35, height / 1.95);
+    button.style('font-size', '' + width / 40 + 'px');
+    button.position( windowWidth / 2.36, height / 2.25);
 }
 
 function mouseMoved() {
   mx = mouseX - 200;
   my = mouseY;
 }
-// function mouseClicked() {
-//   if (link.mouseClicked) {
-//     window.open('https://www.linkedin.com/in/mikayla-buford-947122163/');
-//   }
-// }
+function buttonClicked() {
+    window.open('https://www.linkedin.com/in/mikayla-buford-947122163/');
+}
+
 function draw() {
   background("#180B3D");
  
@@ -172,7 +170,6 @@ function draw() {
 
   fill('#f9f5fa');
   text("I'm redesigning my website", width / 4, height / 3.17);
-  text("You can still check out my work", width / 4, height / 2.45);
-
+  text("You can still check out my work", width / 4 , height / 2.45);
 }
 
